@@ -4,15 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_dmrc_map.*
-import kotlinx.android.synthetic.main.activity_main.*
 
-class dmrc_map : AppCompatActivity() {
+class routesStations : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dmrc_map)
+        setContentView(R.layout.activity_routes_stations)
 
         backbtn.setOnClickListener{
-            val backToMain=Intent(this, MainActivity::class.java)
+            val backToMain= Intent(this, MainActivity::class.java)
             startActivity(backToMain)
         }
     }
