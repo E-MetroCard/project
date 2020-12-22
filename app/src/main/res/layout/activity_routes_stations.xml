@@ -5,18 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    android:scrollbarSize="24dp"
-    tools:context=".MainActivity">
+    tools:context=".routesStations">
+
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="130dp"
-        android:layout_height="39dp"
+        android:layout_width="248dp"
+        android:layout_height="60dp"
         android:layout_marginTop="110dp"
-        android:layout_marginBottom="110dp"
+        android:layout_marginBottom="150dp"
         android:background="@drawable/text_round"
         android:gravity="center"
-        android:hint="Enter card no."
+        android:hint="Enter Source Station"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,59 +24,38 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="124dp"
-        android:layout_height="40dp"
+        android:layout_width="243dp"
+        android:layout_height="61dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginTop="28dp"
-        android:background="@drawable/text_round"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="142dp"
 
+        android:layout_marginRight="142dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/text_round"
         android:gravity="center"
-        android:hint="Password"
+        android:hint="Enter Destination Station"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="118dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="123dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
 
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="150dp"
         android:background="@drawable/oval"
         android:gravity="center"
-        android:text="LOGIN"
+        android:text="FInd Route"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="81dp"
-        android:layout_marginRight="81dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="New user ? Sign up here"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="101dp"
-
-        android:layout_height="50dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/oval"
-        android:gravity="center"
-        android:text="SIGN UP"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
 
     <Button
         android:id="@+id/backbtn"
@@ -91,5 +70,4 @@
         android:textSize="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
