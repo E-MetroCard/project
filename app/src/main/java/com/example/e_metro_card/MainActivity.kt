@@ -22,8 +22,9 @@ class MainActivity : AppCompatActivity() {
         }
 
         routesbtn.setOnClickListener{
-            val routesInt=Intent(this, routesStations::class.java)
+            val routesInt=Intent(this, SearchActivity::class.java)
             startActivity(routesInt)
+
         }
         qrbtn.setOnClickListener{
             val qrint=Intent(this, qr::class.java)
