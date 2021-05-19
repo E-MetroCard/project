@@ -26,5 +26,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(routesInt)
 
         }
+        qrbtn.setOnClickListener{
+            val qrint=Intent(this, qr::class.java)
+            startActivity(qrint)
+        }
     }
 }
