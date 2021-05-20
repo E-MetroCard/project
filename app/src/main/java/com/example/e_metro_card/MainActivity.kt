@@ -30,5 +30,9 @@ class MainActivity : AppCompatActivity() {
             val qrint=Intent(this, qr::class.java)
             startActivity(qrint)
         }
+        paybtn.setOnClickListener{
+            val payint=Intent(this, PaymentActivity::class.java)
+            startActivity(payint)
+        }
     }
 }
