@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.e_metro_card">
     <uses-permission android:name="android.permission.CAMERA"/>
     <application
@@ -13,8 +14,14 @@
         <activity android:name=".qr"></activity>
         <activity android:name=".RouteActivity" />
         <activity android:name=".dmrc_map" />
-        <activity android:name=".loginscreen" />
+        <activity android:name=".Loginscreen" />
+        <activity android:name=".OtpActivity" />
+        <activity android:name=".PhoneNumber" />
+        <activity android:name=".Hero"
+            tools:ignore="Instantiatable" />
+        <activity android:name=".Signup" />
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

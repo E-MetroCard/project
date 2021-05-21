@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1095009013212",
+    "firebase_url": "https://e-metro-card-5de63-default-rtdb.firebaseio.com",
+    "project_id": "e-metro-card-5de63",
+    "storage_bucket": "e-metro-card-5de63.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095009013212:android:a923e7c621e96efb91d319",
+        "android_client_info": {
+          "package_name": "com.example.e_metro_card"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095009013212-scsg0u7k41ahrs3l0uro79map982qd62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpoDXuAq-MaCUOGvIsTff8o4mVTjDJ5vM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095009013212-scsg0u7k41ahrs3l0uro79map982qd62.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
