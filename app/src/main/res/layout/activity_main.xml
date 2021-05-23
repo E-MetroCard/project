@@ -8,21 +8,18 @@
     tools:context=".MainActivity">
 
 
-    <!--   <Button
-        android:id="@+id/loginbtn"
-        android:layout_width="88dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="159dp"
+    <Button
+        android:id="@+id/mapBtn"
+        android:layout_width="146dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="72dp"
         android:background="@drawable/oval"
-        android:text="Login"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="DMRC Map"
+        app:layout_constraintBottom_toTopOf="@+id/signingupbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" /> -->
+        app:layout_constraintTop_toBottomOf="@+id/paybtn" />
 
     <Button
         android:id="@+id/loginto"
@@ -32,71 +29,58 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapbtn2" />
+        app:layout_constraintTop_toBottomOf="@+id/signingupbtn" />
 
     <Button
         android:id="@+id/signingupbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="444dp"
+        android:layout_marginTop="72dp"
         android:text="Signup"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.25"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginbtn"
-        app:layout_constraintVertical_bias="0.402" />
-
-    <Button
-        android:id="@+id/mapbtn2"
-        android:layout_width="146dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginEnd="159dp"
-        android:background="@drawable/oval"
-        android:text="DMRC Map"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qrbtn"
-        app:layout_constraintVertical_bias="0.282" />
+        app:layout_constraintTop_toBottomOf="@+id/mapBtn" />
 
     <Button
         android:id="@+id/routesbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginEnd="159dp"
-        android:layout_marginBottom="96dp"
 
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="15dp"
         android:background="@drawable/oval"
         android:text="Routes Between Stations"
-        app:layout_constraintBottom_toTopOf="@+id/signingupbtn"
-
+        app:layout_constraintBottom_toTopOf="@+id/qrbtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/qrbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="158dp"
 
-        android:layout_marginBottom="100dp"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/oval"
         android:text="Scan Qr "
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/paybtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signingupbtn"
-        app:layout_constraintVertical_bias="0.262"
-        tools:ignore="UnknownId" />
+        app:layout_constraintTop_toBottomOf="@+id/routesbtn" />
+
+    <Button
+        android:id="@+id/paybtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:background="@drawable/oval"
+        android:text="PAY"
+        app:layout_constraintBottom_toTopOf="@+id/mapBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qrbtn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

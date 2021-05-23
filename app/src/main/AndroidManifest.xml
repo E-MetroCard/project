@@ -12,6 +12,7 @@
         android:theme="@style/Theme.EMetroCard">
         <activity android:name=".SearchActivity"></activity>
         <activity android:name=".qr"></activity>
+        <activity android:name=".PaymentActivity"></activity>
         <activity android:name=".RouteActivity" />
         <activity android:name=".dmrc_map" />
         <activity android:name=".Loginscreen" />
@@ -28,6 +29,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="${KEY}"
+            />
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
     </application>
 
 </manifest>

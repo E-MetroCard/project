@@ -10,16 +10,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mapbtn2.setOnClickListener{
+        mapBtn.setOnClickListener{
             val mapInt=Intent(this, dmrc_map::class.java)
             startActivity(mapInt)
         }
 
-
- /*       loginbtn.setOnClickListener{
-            val loginint=Intent(this, Loginscreen::class.java)
-            startActivity(loginint)
-        }*/
 
         routesbtn.setOnClickListener{
             val routesInt=Intent(this, SearchActivity::class.java)
@@ -39,6 +34,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(logging)
         }
 
+        paybtn.setOnClickListener{
+            val payint=Intent(this, PaymentActivity::class.java)
+            startActivity(payint)
+        }
     }
-
 }
