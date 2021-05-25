@@ -38,7 +38,10 @@ class MainActivity : AppCompatActivity() {
             val logging=Intent(this,PhoneNumber::class.java)
             startActivity(logging)
         }
-
+        paybtn.setOnClickListener{
+            val payint=Intent(this, PaymentActivity::class.java)
+            startActivity(payint)
+        }
     }
 
 }
