@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.e_metro_card">
-    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,33 +12,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EMetroCard">
-        <activity android:name=".SearchActivity"></activity>
-        <activity android:name=".qr"></activity>
-        <activity android:name=".PaymentActivity"></activity>
+        <activity android:name=".PayFare"></activity>
+        <activity android:name=".Wallet" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".qr" />
+        <activity android:name=".PaymentActivity" />
         <activity android:name=".RouteActivity" />
         <activity android:name=".dmrc_map" />
         <activity android:name=".Loginscreen" />
         <activity android:name=".OtpActivity" />
         <activity android:name=".PhoneNumber" />
-        <activity android:name=".Hero"
+        <activity
+            android:name=".Hero"
             tools:ignore="Instantiatable" />
         <activity android:name=".Signup" />
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="com.razorpay.ApiKey"
-            android:value="${apiKey}"
-            />
+            android:value="apikey" />
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
             android:value="true" />
-
     </application>
 
 </manifest>
