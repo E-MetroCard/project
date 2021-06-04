@@ -9,38 +9,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="300dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:orientation="vertical"
         android:gravity="center"
         >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            >
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="80dp"
-                android:layout_alignParentBottom="true"
-                android:background="#E2E2E2"
-                android:gravity="center"
-                >
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="35dp"
-                    android:paddingBottom="0dp"
-                    android:textSize="12sp"
-                    android:text="Order #RZP42"
-                    />
-
-            </LinearLayout>
-
-        </RelativeLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,17 +30,18 @@
                 android:layout_gravity="center_horizontal"
                 android:paddingTop="0dp"
                 android:paddingBottom="5dp"
-                android:text="E-Token"
+                android:text="Add Amount"
                 android:textSize="20sp" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="108dp"
+                android:layout_height="49dp"
                 android:layout_gravity="center_horizontal"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
                 android:text="INR 32.00"
-                android:textSize="12sp" />
+                android:textColor="#101010"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -82,21 +57,6 @@
                 android:textSize="12sp"
                 android:textStyle="italic" />
 
-            <TextView
-                android:id="@+id/txt_privacy_policy"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp"
-                android:gravity="center_horizontal"
-                android:paddingTop="10dp"
-                android:paddingBottom="0dp"
-                android:text="Privacy Policy"
-                android:textColor="@android:color/holo_red_dark"
-                android:textSize="12sp"
-                android:textStyle="italic" />
-
             <Button
                 android:id="@+id/btn_pay"
                 android:layout_width="wrap_content"
@@ -107,26 +67,11 @@
                 android:background="@drawable/green_button"
                 android:paddingLeft="20dp"
                 android:paddingRight="20dp"
-                android:text="BUY"
+                android:text="PAY"
                 android:textColor="#fcfcfc"
                 android:textSize="14sp" />
 
         </LinearLayout>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:background="@drawable/secured_by_bg"
-            android:textSize="12sp"
-            android:textColor="#292728"
-            android:textStyle="italic"
-            android:text="Secure Payments by Razorpay"
-            />
 
     </LinearLayout>
 

@@ -16,20 +16,12 @@ class MainActivity : AppCompatActivity() {
         }
 
 
- /*       loginbtn.setOnClickListener{
-            val loginint=Intent(this, Loginscreen::class.java)
-            startActivity(loginint)
-        }*/
-
         routesbtn.setOnClickListener{
             val routesInt=Intent(this, SearchActivity::class.java)
             startActivity(routesInt)
 
         }
-        qrbtn.setOnClickListener{
-            val qrint=Intent(this, qr::class.java)
-            startActivity(qrint)
-        }
+
         signingupbtn.setOnClickListener{
             val signingup=Intent(this,Signup::class.java)
             startActivity(signingup)
@@ -37,10 +29,6 @@ class MainActivity : AppCompatActivity() {
             loginto.setOnClickListener{
             val logging=Intent(this,PhoneNumber::class.java)
             startActivity(logging)
-        }
-        paybtn.setOnClickListener{
-            val payint=Intent(this, PaymentActivity::class.java)
-            startActivity(payint)
         }
     }
 

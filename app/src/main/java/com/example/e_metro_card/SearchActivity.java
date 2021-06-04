@@ -30,7 +30,7 @@ public class SearchActivity extends AppCompatActivity {
     Button btn_route;
     ListView listView;
 
-    ArrayList<com.example.e_metro_card.Station> stationArrayList = new ArrayList<>(5);
+    ArrayList<com.example.e_metro_card.Station> stationArrayList = new ArrayList<com.example.e_metro_card.Station>(5);
     ArrayAdapter<String> adapterString;
     MyAdapter customAdapter;
     ArrayAdapter<com.example.e_metro_card.Station> adapterStation;
